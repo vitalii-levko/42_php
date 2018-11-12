@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balloon</title>
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+    <script type="text/javascript">
+        var w = 200;
+        var h = 200;
+        var i = 0;
+        var c = ['red', 'green', 'blue'];
+
+        function change(e, l) {
+            if (l === 'g') {
+                w += 10;
+                h += 10;
+                i++;
+            }
+            else {
+                w -= 5;
+                h -= 5;
+                (i > 0) ? i-- : i = 2;
+            }
+            if (w < 200 || w > 420) {
+                w = 200;
+                h = 200;
+            }
+            i %= 3;
+            e.setAttribute('style', 'width: ' + w + 'px; height: ' + h + 'px; background-color: ' + c[i] + '; border-radius: 50%;');
+        }
+    </script>
+</head>
+<body>
+<div onclick="change(this, 'g');" onmouseout="change(this, 's');"></div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    position: absolute;
+    background-color: navy;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    border: 1px solid white;
+    background-color: white;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+span {
+}
+
+.symbol {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1vw;
+}
+
+.num {
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    bottom: 1px;
+    vertical-align: sub;
+    font-size: 0.7vw;
+}
+
+.atom {
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    vertical-align: super;
+    font-size: 0.7vw;
+}
+
+@media (max-width: 1600px) {
+    .symbol {
+        font-size: 1.3vw;
+    }
+
+    .num, .atom {
+        font-size: 0.9vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .symbol {
+        font-size: 1.5vw;
+    }
+
+    .num, .atom {
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 960px) {
+    .symbol {
+        font-size: 1.8vw;
+    }
+
+    .num, .atom {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .symbol {
+        font-size: 2.2vw;
+    }
+
+    .num, .atom {
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .symbol {
+        font-size: 2.7vw;
+    }
+
+    .num, .atom {
+        font-size: 2vw;
+    }
+}
+
+.names {
+    background-color: navy;
+    border: none;
+}
+
+td {
+    text-align: center;
+    padding: 16px 20px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.breeze {
+    background-color: rgb(192, 255, 255);
+    color: black;
+}
+
+.yellow {
+    background-color: rgb(240, 255, 143);
+    color: black;
+}
+
+.grey {
+    background-color: rgb(204, 204, 204);
+    color: black;
+}
+
+.light {
+    background-color: rgb(232, 232, 232);
+    color: black;
+}
+
+.purple {
+    background-color: rgb(255, 191, 255);
+    color: black;
+}
+
+.violet {
+    background-color: rgb(255, 153, 204);
+    color: black;
+}
+
+.bronze {
+    background-color: rgb(204, 204, 153);
+    color: black;
+}
+
+.orange {
+    background-color: rgb(255, 222, 173);
+    color: black;
+}
+
+.pink {
+    background-color: rgb(255, 192, 192);
+    color: black;
+}
+
+.red {
+    background-color: rgb(255, 102, 102);
+    color: black;
+}
+
+.white {
+    background-color: white;
+    color: navy;
+}
+
+.symbol {
+    color: navy;
+}
+
+#subtitles {
+    background-color: white;
+    color: navy;
+    font-size: x-small;
+}
+
+#cols:first-child {
+    vertical-align: top;
+}
+
+.rd {
+    color: rgb(203, 0, 0);
+}
+
+.grn {
+    color: rgb(0, 112, 0);
+}
+
+.gry {
+    color: rgb(96, 96, 96);
+}
+
+.notes {
+    background-color: white;
+    font-size: small;
+    color: navy;
+    height: 30px;
+}
+
+.nv {
+    color: navy;
+}
+
+.bl {
+    color: black;
+}
+
+.subnote {
+    padding: 0 10px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.prim {
+    border-top: 2px solid navy;
+    border-bottom: 2px solid navy;
+}
+
+.dec {
+    border-top: 2px dashed navy;
+    border-bottom: 2px dashed navy;
+}
+
+.synt {
+    border-top: 2px dotted navy;
+    border-bottom: 2px dotted navy;
+}
+
+.dot {
+    border-top: 2px dotted navy;
+    border-bottom: 2px dotted navy;
+    border-left: none;
+    border-right: none;
+}
+
+.dash {
+    border-top: 2px dashed navy;
+    border-bottom: 2px dashed navy;
+    border-left: none;
+    border-right: none;
+}
+
+.sol {
+    border-top: 2px solid navy;
+    border-bottom: 2px solid navy;
+    border-left: none;
+    border-right: none;
+}
+
+.met {
+    background-color: rgb(224, 224, 224);
+}
+
+img {
+    position: fixed;
+    width: 180px;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+caption {
+    font-size: large;
+}
